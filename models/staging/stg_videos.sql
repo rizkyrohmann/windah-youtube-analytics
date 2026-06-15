@@ -14,7 +14,8 @@ renamed as (
         safe_divide(like_count, view_count) * 100 as like_rate,
         safe_divide(comment_count, view_count) * 100 as comment_rate,
         safe_divide(like_count + comment_count, view_count) * 100 as engagement_rate,
-        cast(extracted_at as timestamp) as extracted_at
+        cast(extracted_at as timestamp) as extracted_at,
+        datetime(cast(published_at as timestamp), 'Asia/Jakarta') as published_at_wib
     from source 
 )
 
