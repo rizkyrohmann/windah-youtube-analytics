@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: youtube_raw
+    database: ytwindah-analysis
+    schema: youtube_raw
+    tables:
+      - name: raw_video_stats
+      - name: raw_channel_stats
