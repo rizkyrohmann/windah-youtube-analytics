@@ -20,3 +20,4 @@ renamed as (
 )
 
 select * from renamed
+where view_count >= 100
